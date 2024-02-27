@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1>Modern calculator</h1> -->
+
+    <div class="container">
+      <div class="calculator">
+        <input type="text" id="display" value="" readonly />
+        <div class="keys">
+          <button class="action" onclick="clearDisplay()">AC</button>
+          <button onclick="appendToDisplay('%')">%</button>
+          <button onclick="appendToDisplay('/')">/</button>
+          <button class="action" onclick="backspace()">⌫</button>
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('*')">*</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('+')">+</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('-')">-</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('.')">.</button>
+          <button class="equals" onclick="calculateResult()">=</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Developed by <a href="https://github.com/chukwu777">@Emmanuel_ic</a>
+    </footer>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>

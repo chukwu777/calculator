@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.calculator {
+  width: 300px;
+  /* border: 1px solid #ccc; */
+  border-radius: 7px;
+  padding: 15px;
+  background: #fffefe15;
+  box-shadow: 20px 20px 30px #cccccc, -20px -20px 30px #ffffff;
+}
+
+#display {
+  width: 100%;
+  height: 2.6em;
+  margin-bottom: 15px;
+  padding: 5px 8px;
+  font-size: 22px;
+  outline: none;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  background: #fbfbc1;
+  box-shadow: inset 5px 5px 0px #d0d0a0, inset -5px -5px 0px #ffffe2;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 7px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 3px;
+  background: #fefaff;
+  box-shadow: -2px 2px 26px #b8b8b8, 2px -2px 43px #f3f3f3;
+  color: #492e87;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #faf3e8;
+}
+
+button:active {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+
+.equals {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+
+.equals:hover {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+
+.equals:active {
+  background-color: #232224;
+  color: #f0f0f0;
+}
+
+.action {
+  color: #b80000;
+}
+@media only screen and (max-width: 600px) {
+  .calculator {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .calculator {
+    width: 530px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .calculator {
+    width: 600px;
+  }
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-shadow: -3px 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+footer a {
+  text-decoration: none;
+}
